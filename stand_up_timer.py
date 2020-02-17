@@ -45,8 +45,6 @@ def ResetTimer():
     seconds = 0
     str_seconds = '0' + str(seconds)
     countdown_display.configure(text='%s:' % (minutes) + str_seconds)
-    #enableTimer = True
-    
                    
 # Window
 window = tk.Tk()
