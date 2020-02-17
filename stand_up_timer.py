@@ -2,7 +2,7 @@ import time
 import tkinter as tk
 
 # Time
-minutes = 10
+minutes = 30
 seconds = 0
 enableTimer = True
 
@@ -43,7 +43,8 @@ def ResetTimer():
     enableTimer = False
     minutes = 30
     seconds = 0
-    countdown_display.configure(text='%s:%s' % (minutes,seconds))
+    str_seconds = '0' + str(seconds)
+    countdown_display.configure(text='%s:' % (minutes) + str_seconds)
     #enableTimer = True
     
                    
